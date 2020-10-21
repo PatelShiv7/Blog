@@ -123,7 +123,7 @@ a.active,a:hover {
     padding-left: 3vw;
     padding-top: 3vh;
     padding-right: 3vw;
-    font-family: IBM Plex Sans;
+    font-family: 'IBM Plex Sans';
     font-style: normal;
     font-size: 1.5rem;
     color: #fff;
@@ -212,6 +212,7 @@ h1 {
     .photo-grid {
         gap: 0.7rem;
     }
+
     .card-mid {
         grid-row: span 5 / auto;
     }
@@ -234,6 +235,12 @@ h1 {
 
     .card-wide-big {
         grid-column: span 4 / auto;
+    }
+
+    .card:hover {
+        box-shadow: rgba(2,8,20,0.1) 0px 0.35em 1.175em, rgba(2,8,20,0.08) 0px 0.175em 0.5em;
+        transform: translate(0px) scale(1.0);
+    
     }
 }
 
