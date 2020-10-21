@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title> Home | Zoo</title>
+        <link rel="stylesheet" href="css/wellington-zoo.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div id="nav"> <!-- Navigation Bar-->
+            <ul>
+                <li> <a href="https://wellingtonzoo.com/visit/plan-your-day/"> Visit </a> </li>
+                <li> <a href="https://wellingtonzoo.com/things-to-do/holiday-programmes/">Things to do </a> </li>
+                <li> <a href="https://wellingtonzoo.com/animals/meet-the-animals/"> Animals </a> </li>
+                <li> <a href="https://wellingtonzoo.com/conservation/conservation-champions/"> Conservation</a> </li>
+                <li> <a href="https://wellingtonzoo.com/support-us/supporters/"> Support Us</a> </li>
+                <li> <a href="https://wellingtonzoo.com/venues/parties-and-celebrations/"> Venues</a> </li>
+            </ul>
+        </div>
+
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="images/slideshow_image_1.JPG" style="width: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slideshow_image_2.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slideshow_image_3.JPG" style="width:100%">
+
+            </div>
+            <!-- Next and previous buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- Dots-->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script> /* Script for slideshow */
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+            <div id="information-tab">
+                <div id="time">
+                    <img src="images/time_open.JPG" alt="Opening times"> 
+                </div>
+                
+                <div id="tickets">
+                     <a href="https://wellingtonzoo.com/visit/buy-tickets/">
+                        <img src="images/ticket_bookings.JPG" alt="Ticket bookings">
+                    </a>
+                </div>
+
+                <div id="location">
+                    <a href="https://wellingtonzoo.com/contact-us/#info">
+                        <img src="images/location.JPG" alt="Visit us">
+                    </a>
+                </div>
+
+                <div id="events">
+                    <a href="https://wellingtonzoo.com/things-to-do/events/">
+                        <img src="images/events.JPG" alt="What's on">
+                    </a>
+                </div>
+            </div>
+
+            <div id="zoo-crew">
+                <a href="https://wellingtonzoo.com/visit/annual-memberships/zoo-crew/">
+                    <img src="images/zoo_crew.JPG" alt="Join our zoo crew">
+                </a>
+            </div>
+
+            <div id="visit">
+                <a href="https://wellingtonzoo.com/visit/plan-your-day/">
+                    <img src="images/plan_visit.JPG" alt="Plan your visit" width="605px" height="466px">
+                </a>
+            </div>
+
+            <div id="facebook">
+                <a href="https://www.facebook.com/WgtnZoo/">
+                    <img src="images/facebook.JPG" alt="Facebook link" width="600px" height="300px">
+                </a>
+            </div>
+
+            <div id="taste">
+                <a href="https://wellingtonzoo.com/visit/explore-the-zoo/">
+                    <img src="images/taste_image.JPG" alt="Get a taste for a day at the zoo" width="600px">
+                </a>
+            </div>
+
+            <div id="booking">
+                <a href="https://wellingtonzoo.com/things-to-do/close-encounters/">
+                    <img src="images/booking.JPG" alt="Book an encounter" width="850px" height="600px">
+                </a>
+            </div>
+
+            <div id="support">
+                <a href="https://wellingtonzoo.com/support-us/">
+                    <img src="images/support.JPG" alt="Support the Zoo" width="850px" height="607px">
+                </a>
+            </div>
+
+            <div id="newsletter">
+                <div id="newsletter_heading">
+                    <h1> sign up for our newsletter</h1>
+                </div>
+                <div id="newsletter_paragraph">
+                    <p> Our email newsletter keeps you up to date with what's happening at the Zoo. </p>
+                </div>
+                <img src="images/giraffe.jpg" alt="Sign up for our newsletter" width="1450px">
+
+                <div class="search">
+                    <form action="https://wellingtonzoo.com/">
+                        <input type="text" placeholder="Email Address" name="search">
+                        <button>
+                            <i class="fa fa-search"
+                            style="font-size: 18px;">
+                        </i>
+                        </button>
+                        
+                    </form>
+                </div>
+
+                </div>
+            </div>
+        
+    </body>
+
+
+</html>
