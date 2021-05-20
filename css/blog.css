@@ -176,7 +176,7 @@ button {
 
 @media screen and (min-width: 600px){
     .card-tall {
-        grid-row: span 7 / auto;
+        grid-row: span 10 / auto;
     }
 
     .card-tall-small{
@@ -196,7 +196,7 @@ button {
     }
 
     .card-mid {
-        grid-row: span 4 / auto;
+        grid-row: span 5 / auto;
     }
 }
 
@@ -204,7 +204,7 @@ button {
 p {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 h1 {

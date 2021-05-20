@@ -129,7 +129,7 @@ li {
     padding-right: 3vw;
     font-family: 'IBM Plex Sans';
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #fff;
     box-shadow: rgba(3,8,20,0.1) 0px 0.15rem 0.5 rem, rgba(2,8,20,0.1) 0px 0.075rem 0.0175rem;
     height: 100%;
@@ -176,7 +176,7 @@ button {
 
 @media screen and (min-width: 600px){
     .card-tall {
-        grid-row: span 7 / auto;
+        grid-row: span 10 / auto;
     }
 
     .card-tall-small{
@@ -196,7 +196,7 @@ button {
     }
 
     .card-mid {
-        grid-row: span 4 / auto;
+        grid-row: span 5 / auto;
     }
 }
 
@@ -204,7 +204,7 @@ button {
 p {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 h1 {
@@ -245,14 +245,6 @@ h1 {
         box-shadow: rgba(2,8,20,0.1) 0px 0.35em 1.175em, rgba(2,8,20,0.08) 0px 0.175em 0.5em;
         transform: translate(0px) scale(1.0);
     
-    }
-
-    p {
-        font-size: 0.5rem;
-    }
-
-    h1 {
-        font-size: 0.9rem;
     }
 }
 
