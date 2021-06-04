@@ -8,14 +8,15 @@
 
 body {
     font-family: montserrat;
-    background-color: #2c3e50;
+    background-color: #ff533d;
 }
 
 nav {
-    background: #0082e6;
+    background: #0f1626;
     height: 80px;
     width: 100%;
 }
+
 
 label.logo {
     color: white;
@@ -23,7 +24,7 @@ label.logo {
     line-height: 80px;
     padding: 0 30px;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 nav ul {
@@ -46,12 +47,14 @@ nav ul li a {
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
     font-size: 1.6rem;
+    
 }
 
 a.active,a:hover {
-    background: #1b9bff;
+    background: #0f1626;
     transition: .5s;
 }
 
@@ -132,7 +135,8 @@ a.active,a:hover {
     transition: all 500ms;
     overflow: hidden;
     text-align: center;
-
+    padding-left: 20px;
+    padding-right: 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
